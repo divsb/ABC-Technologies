@@ -5,11 +5,10 @@
       command: 'echo $BUILD_NUMBER'
       register: build_number
       
-    - name: Build Docker image
-      command: 'docker build -t purdue-igp-docker .'
-      command: 'docker tag purdue-igp-docker:$BUILD_NUMBER divsdevi/purdue-igp-docker:$BUILD_NUMBER'
+    name: Build Docker image
+      command: 'docker build -t purdue-igp-docker:latest .'
+      command: 'docker tag purdue-igp-docker:latest divsdevi/purdue-igp-docker:latest'
 
-    
 
     - name: Run in container
       command: 'docker run -d --rm --name "purd" -p 8085:8080 divsdevi/purdue-igp-docker'      
