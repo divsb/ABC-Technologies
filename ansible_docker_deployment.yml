@@ -5,7 +5,7 @@
       command: 'echo $BUILD_NUMBER'
       register: build_number
       
-    name: Build Docker image
+    - name: Build Docker image
       command: 'docker build -t purdue-igp-docker:latest .'
       command: 'docker tag purdue-igp-docker:latest divsdevi/purdue-igp-docker:latest'
 
