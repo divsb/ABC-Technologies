@@ -11,5 +11,5 @@
 
 
     - name: Run in container
-      command: 'docker run -d --rm --name "purd" -p 8085:8080 divsdevi/purdue-igp-docker'      
+      command: 'docker run -d --rm --name "purdueigpdoc" -p 8086:8080 divsdevi/purdue-igp-docker'      
    
