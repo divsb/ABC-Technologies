@@ -11,5 +11,5 @@
 
 
     - name: Run in container
-      command: 'docker run -d --rm --name "purdy" -p 8087:8080 divsdevi/purdue-igp-docker:$BUILD_NUMBER'      
+      command: 'docker run -d --rm --name "purdi" -p 8088:8080 divsdevi/purdue-igp-docker:latest'      
    
