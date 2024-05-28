@@ -9,5 +9,5 @@
       command: 'docker build -t divsdevi/purdue-igp-docker .'
     
     - name: Run in container
-      command: 'docker run -d --rm --name "purdue-igp-docker" -p 8082:8080 divsdevi/purdue-igp-docker'      
+      command: 'docker run -d --rm --name "purdue-igp-docker" -p 8083:8080 divsdevi/purdue-igp-docker'      
    
