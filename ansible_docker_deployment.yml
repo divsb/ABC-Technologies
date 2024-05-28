@@ -6,7 +6,7 @@
       register: build_number
       
     - name: Build Docker image
-      command: 'docker build -t divsdevi/purdue-igp-docker .'
+      command: 'docker build -t divsdevi/purdue-igp-docker:latest'
 
     
     
