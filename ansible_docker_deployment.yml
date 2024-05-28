@@ -8,12 +8,8 @@
     - name: Build Docker image
       command: 'docker build -t divsdevi/purdue-igp-docker .'
 
-     - name: Stop and remove any existing container with the same name
-      shell: |
-        docker stop purdue-igp-docker || true
-        docker rm purdue-igp-docker || true
-        ignore_errors: true
+    
     
     - name: Run in container
-      command: 'docker run -d --rm --name "purdue-igp" -p 8083:8080 divsdevi/purdue-igp-docker'      
+      command: 'docker run -d --rm --name "purdue" -p 8084:8080 divsdevi/purdue-igp-docker'      
    
